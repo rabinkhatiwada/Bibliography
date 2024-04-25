@@ -12,14 +12,16 @@ body header .navbar {
   padding: 0;
 }
 body header .navbar .container-fluid {
-  background-color: #E7F5FE;
-  padding: 20px;
+  background-color: #252729;
+  padding: 10px;
+  color: white;
 }
 body header .navbar .container-fluid .logo h1 {
   font-size: 40px;
   font-weight: bolder;
   padding: 25px 10px 10px 5px;
   margin: 0px 0px 0px 60px;
+  color: white;
 }
 body header .navbar .container-fluid .navbar-nav {
   padding: 0px 10px 0px 200px;
@@ -31,7 +33,7 @@ body header .navbar .container-fluid .navbar-nav .nav-item {
 body header .navbar .container-fluid .navbar-nav .nav-link {
   text-align: center;
   text-decoration: none;
-  color: #575C72;
+  color: white;
   font-size: 20px;
   font-weight: 500;
 }
@@ -112,72 +114,64 @@ body .main .second-div img {
   padding: 20px;
 }
 body .about-section {
-  padding: 10px 150px 10px 150px;
-  margin: 0;
+  padding: 10px 150px;
 }
 body .about-section #section-heading {
   font-size: 40px;
-  padding: 60px 5px 40px 5px;
+  padding: 10px 5px 5px 5px;
   text-align: center;
 }
 body .about-section .abt {
-  padding: 10px 0px 0px 0px;
+  padding-top: 20px;
 }
 body .about-section .abt h2 {
-  font-size: 20px;
-  font-weight: bolder;
+  font-size: 24px;
+  font-weight: bold;
 }
 body .about-section .abt p {
-  font-size: 16px;
+  font-size: 18px;
   text-align: justify;
 }
-body .about-section .expertise {
-  display: flex;
+body .about-section .contact {
+  margin-top: 50px;
 }
-body .about-section .exp-data {
-  padding: 0px 20px 0px 0px;
-}
-body .about-section .exp-data h2 {
-  font-size: 20px;
-  font-weight: bolder;
-  padding: 20px 10px 0px 0px;
+body .about-section .contact h2 {
+  font-size: 24px;
+  font-weight: bold;
   margin-bottom: 10px;
-  text-align: center;
 }
-body .about-section .exp-data p {
-  font-size: 15px;
-  padding: 0px;
-  text-align: left;
+body .about-section .contact p {
+  font-size: 18px;
+  margin: 0;
 }
 body .about-section .about-img {
-  width: 100%;
-  padding: 20px 30px 20px 20px;
+  padding: 20px 0;
 }
 body .about-section .about-img img {
   width: 100%;
 }
-body .about-section .brandg .camp .reporting {
-  display: flex;
-  flex-direction: column;
+body .about-section .skill {
+  padding: 20px 0px;
 }
-body .about-section .abtsec3 {
+body .about-section .skill h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+body .about-section .skills {
+  list-style-type: none;
+  padding: 0;
+}
+body .about-section .skills li {
+  font-size: 25px;
+  margin-bottom: 10px;
   display: flex;
-  padding: 5px 10px 5px 0px;
-  justify-content: flex-start;
   align-items: center;
 }
-body .about-section .abtsec3 i {
-  font-size: 20px;
-  padding: 0px 10px 0px 0px;
-  margin: 0px;
+body .about-section .skills li .fa-square {
+  font-size: 25px;
+  margin-right: 10px;
   color: #FF8976;
-}
-body .about-section .abtsec3 h2 {
-  padding: 0;
-  font-size: 20px;
-  font-weight: bolder;
-  margin: 0;
-  align-self: center;
 }
 body .social-media {
   background-color: #E7F5FE;
@@ -267,62 +261,32 @@ body footer {
   padding: 30px;
   margin-top: 30px;
 }
-body footer .first-grid {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: self-start;
-  padding: 10px 10px 10px 60px;
+body footer #fsocial-media {
+  padding: 5px 5px 10px 0px;
 }
-body footer .first-grid p {
-  margin: 0px;
-  padding: 10px;
-}
-body footer .first-grid .logo {
-  padding: 10px 5px 0px 10px;
-}
-body footer .second-grid {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-body footer .second-grid h3 {
-  padding: 30px 50px 5px 60px;
-  margin: 0px 5px 5px 10px;
-}
-body footer .second-grid .sgrid1 #fsocial-media {
-  padding: 5px 5px 10px 60px;
-  margin: 0px;
-}
-body footer .second-grid .sgrid1 #fsocial-media li {
-  padding: 10px;
+body footer #fsocial-media li {
   list-style: none;
   display: inline;
   width: 50px;
   text-align: center;
   text-decoration: none;
 }
-body footer .second-grid .sgrid1 #fsocial-media li a {
+body footer #fsocial-media li a {
   text-decoration: none;
   font-size: 20px;
   color: #E7F5FE;
   border: 1px solid #F0F2F4;
   padding: 5px 10px;
 }
-body footer .second-grid .sgrid1 #fsocial-media li a .fa:hover {
+body footer #fsocial-media li a .fa:hover {
   opacity: 0.7;
 }
-body footer .second-grid .sgrid2 {
-  display: flex;
-  flex-direction: column;
-  align-items: end;
-}
-body footer .second-grid .sgrid2 .privacy h4 a {
+body footer .privacy h4 a {
   font-size: 15px;
   text-decoration: none;
   color: #E7F5FE;
 }
-body footer .second-grid .sgrid2 #arrow {
+body footer #arrow {
   margin: 0px 0px 0px 0px;
   padding: 15px 10px 15px 10px;
 }

@@ -5,15 +5,13 @@ use App\Http\Controllers\DataController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\LoginController;
-
+use App\Http\Controllers\SettingController;
 
 Route::get('/', function () {
     return view('home');
 });
 
-Route::get('/home1', function () {
-    return view('home1');
-});
+
 
 Route::get('/about', function () {
     return view('about');
@@ -52,15 +50,21 @@ Route::prefix('admin')->name('admin.')->middleware('auth')->group(function () {
         Route::delete('destroy/{id}', [PostController::class, 'destroy'])->name('destroy');
     });
 
-    // Routes for managing posts
+    Route::prefix('settings')->name('settings.')->group(function(){
+        Route::get('', [SettingController::class, 'index'])->name('index');
+        Route::match(['GET', 'POST'],'/home', [SettingController::class, 'homepage'])->name('homepage');
+        Route::match(['GET', 'POST'],'/about', [SettingController::class, 'aboutpage'])->name('aboutpage');
+        Route::match(['GET', 'POST'],'/footer', [SettingController::class, 'footer'])->name('footer');
+
+    });
 
     // Admin panel route
-    Route::get('/', function () {
+    Route::get('/admin', function () {
         return view('admin.adminpanel');
     })->name('adminpanel');
 });
 
-Route::get('/', function () {
+Route::get('/admin', function () {
     // Redirect to login page if not authenticated
     return redirect()->route('login');
 });

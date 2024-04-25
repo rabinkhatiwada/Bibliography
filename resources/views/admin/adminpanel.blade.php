@@ -77,7 +77,14 @@
       <!-- Page content -->
       <div class="col-md-10 col-sm-12">
         <div class="content">
-
+            <div class="container">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb bg-light">
+                        <li class="breadcrumb-item"><a href="/admin">Admin</a></li>
+                        @yield('jumbo')
+                    </ol>
+                </nav>
+            </div>
           @yield('content')
         </div>
       </div>
